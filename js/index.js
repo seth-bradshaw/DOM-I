@@ -40,3 +40,91 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Updating nav links
+const links = document.querySelector("nav")
+
+links.children[0].textContent = siteContent["nav"]["nav-item-1"]
+links.children[1].textContent = siteContent["nav"]["nav-item-2"]
+links.children[2].textContent = siteContent["nav"]["nav-item-3"]
+links.children[3].textContent = siteContent["nav"]["nav-item-4"]
+links.children[4].textContent = siteContent["nav"]["nav-item-5"]
+links.children[5].textContent = siteContent["nav"]["nav-item-6"]
+
+// Updating the cta section
+//img
+const ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"])
+
+//h1
+const h1 = document.querySelector("h1")
+const br = document.createElement("br")
+const br2 = document.createElement("br")
+const h1text1 = document.createTextNode("Dom")
+const h1text2 = document.createTextNode("Is")
+const h1text3 = document.createTextNode("Awesome")
+h1.appendChild(h1text1)
+h1.appendChild(br)
+h1.appendChild(h1text2)
+h1.appendChild(br2)
+h1.appendChild(h1text3)
+
+//button
+const button = document.querySelector("button")
+button.textContent = siteContent["cta"]["button"]
+
+//updating main-content section
+//h4
+const featuresH4 = document.querySelector(".text-content:nth-of-type(1) h4")
+featuresH4.textContent = siteContent["main-content"]["features-h4"]
+const aboutH4 = document.querySelector(".text-content:nth-of-type(2) h4")
+aboutH4.textContent = siteContent["main-content"]["about-h4"]
+const servicesH4 = document.querySelector(".bottom-content .text-content:nth-of-type(1) h4")
+servicesH4.textContent = siteContent["main-content"]["services-h4"]
+const productH4 = document.querySelector(".bottom-content .text-content:nth-of-type(2) h4")
+productH4.textContent = siteContent["main-content"]["product-h4"]
+const visionH4 = document.querySelector(".bottom-content .text-content:nth-of-type(3) h4")
+visionH4.textContent = siteContent["main-content"]["vision-h4"]
+
+//p
+const featuresP = document.querySelector(".text-content:nth-of-type(1) P")
+featuresP.textContent = siteContent["main-content"]["features-content"]
+const aboutP = document.querySelector(".text-content:nth-of-type(2) P")
+aboutP.textContent = siteContent["main-content"]["about-content"]
+const servicesP = document.querySelector(".bottom-content .text-content:nth-of-type(1) P")
+servicesP.textContent = siteContent["main-content"]["services-content"]
+const productP = document.querySelector(".bottom-content .text-content:nth-of-type(2) P")
+productP.textContent = siteContent["main-content"]["product-content"]
+const visionP = document.querySelector(".bottom-content .text-content:nth-of-type(3) P")
+visionP.textContent = siteContent["main-content"]["vision-content"]
+
+//center img
+const mainContentImg = document.querySelector("#middle-img");
+mainContentImg.setAttribute("src", siteContent["main-content"]["middle-img-src"])
+
+//updating contact section
+//h4
+const contactH4 = document.querySelector(".contact h4")
+contactH4.textContent = siteContent["contact"]["contact-h4"]
+
+//p
+//breaking address
+const contactP1 = document.querySelector(".contact p:nth-of-type(1)")
+const br3 = document.createElement("br")
+const contactPText1 = document.createTextNode("123 Way 456 Street")
+const contactPText2 = document.createTextNode("Somewhere, USA")
+contactP1.appendChild(contactPText1)
+contactP1.appendChild(br3)
+contactP1.appendChild(contactPText2)
+
+//phone number
+const contactP2 = document.querySelector(".contact p:nth-of-type(2)")
+contactP2.textContent = siteContent["contact"]["phone"]
+
+//email
+const contactP3 = document.querySelector(".contact p:nth-of-type(3)")
+contactP3.textContent = siteContent["contact"]["email"]
+
+//updating footer section
+const footerP = document.querySelector("footer p")
+footerP.textContent = siteContent["footer"]["copyright"]
