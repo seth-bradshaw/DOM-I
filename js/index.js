@@ -51,6 +51,24 @@ links.children[3].textContent = siteContent["nav"]["nav-item-4"]
 links.children[4].textContent = siteContent["nav"]["nav-item-5"]
 links.children[5].textContent = siteContent["nav"]["nav-item-6"]
 
+const addLink1 = document.createElement("a");
+addLink1.href = "#";
+addLink1.textContent = "Home";
+document.querySelector("nav").prepend(addLink1);
+
+const addLink2 = document.createElement("a");
+addLink2.href = "#";
+addLink2.textContent = "Pitbulls";
+document.querySelector("nav").appendChild(addLink2);
+
+links.children[1].style.color = "green"
+links.children[2].style.color = "green"
+links.children[3].style.color = "green"
+links.children[4].style.color = "green"
+links.children[5].style.color = "green"
+links.children[6].style.color = "green"
+addLink1.style.color = "green";
+addLink2.style.color = "green";
 // Updating the cta section
 //img
 const ctaImg = document.getElementById("cta-img");
